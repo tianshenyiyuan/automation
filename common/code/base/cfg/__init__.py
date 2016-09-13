@@ -53,17 +53,17 @@ def caseName(name):
             print "用例：%s 开始执行" % name
             setData('用例名',name)
             returnValue = method(*args)
-            setData('用例名',name) #执行完毕后用例名清空
+            setData('用例名',"") #执行完毕后用例名清空
             print "用例：%s 执行完毕" % name
             return returnValue
         return _call_       
     return _call_   
-# def dataDir(path):
+# def cfgDir(path):
 #     '''设置数据路径
 #     :Args:
 #         - path 路径
 #     '''
 #     def _call_(name):
-#         setDataDir(path)
+#         setCfgDir(path)
 #         return name
 #     return _call_  

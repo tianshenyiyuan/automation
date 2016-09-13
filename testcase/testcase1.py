@@ -16,7 +16,7 @@ class Testcase1(BaseCase):
         function.loginSingle()
         function.navClickTop("商品", "商品信息")
         function.switchToFrame("main")
-        for _ in range(5):
+        for _ in range(1):
             
             function.clickBtnByText("新增")
             idValueDic = cfg.getIdValueDic("商品信息")
